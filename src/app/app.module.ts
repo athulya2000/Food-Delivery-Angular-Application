@@ -5,11 +5,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { SignupComponent } from './signup/signup.component';
 
 const myRoute:Routes=[
   {
     path:"sign in",
     component:SignInComponent
+  },
+  {
+    path:"sign up",
+    component:SignupComponent
   }
 ]
 
@@ -17,7 +22,8 @@ const myRoute:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    SignInComponent
+    SignInComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
