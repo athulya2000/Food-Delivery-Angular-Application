@@ -9,10 +9,11 @@ import { SignupComponent } from './signup/signup.component';
 import { VegComponent } from './veg/veg.component';
 import { NonVegComponent } from './non-veg/non-veg.component';
 import { FastFoodComponent } from './fast-food/fast-food.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 const myRoute:Routes=[
   {
-    path:"sign in",
+    path:"",
     component:SignInComponent
   },
   {
@@ -41,7 +42,8 @@ const myRoute:Routes=[
     SignupComponent,
     VegComponent,
     NonVegComponent,
-    FastFoodComponent
+    FastFoodComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
