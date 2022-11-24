@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignupComponent } from './signup/signup.component';
 import { VegComponent } from './veg/veg.component';
+import { NonVegComponent } from './non-veg/non-veg.component';
 
 const myRoute:Routes=[
   {
@@ -20,6 +21,10 @@ const myRoute:Routes=[
   {
     path:"veg",
     component:VegComponent
+  },
+  {
+    path:"nonveg",
+    component:NonVegComponent
   }
 ]
 
@@ -29,7 +34,8 @@ const myRoute:Routes=[
     AppComponent,
     SignInComponent,
     SignupComponent,
-    VegComponent
+    VegComponent,
+    NonVegComponent
   ],
   imports: [
     BrowserModule,
