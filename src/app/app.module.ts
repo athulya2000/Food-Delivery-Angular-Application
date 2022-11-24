@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignupComponent } from './signup/signup.component';
+import { VegComponent } from './veg/veg.component';
 
 const myRoute:Routes=[
   {
@@ -15,6 +16,10 @@ const myRoute:Routes=[
   {
     path:"sign up",
     component:SignupComponent
+  },
+  {
+    path:"veg",
+    component:VegComponent
   }
 ]
 
@@ -23,12 +28,13 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     SignInComponent,
-    SignupComponent
+    SignupComponent,
+    VegComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
