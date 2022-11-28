@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
+ email=""
+ password=""
 
+ readValues=()=>
+ {
+  let data:any={"email":this.email,"password":this.password}
+  console.log(data)
+ }
 }

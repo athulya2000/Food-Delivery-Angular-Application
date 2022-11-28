@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent {
+ email=""
+ password=""
+ confirmpassword=""
 
+
+ readValues=()=>
+ {
+  let data:any={"email":this.email,"password":this.password,"confirmpassword":this.confirmpassword}
+  console.log( data)
+ }
 }

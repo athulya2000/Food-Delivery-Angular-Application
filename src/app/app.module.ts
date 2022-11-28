@@ -10,6 +10,7 @@ import { VegComponent } from './veg/veg.component';
 import { NonVegComponent } from './non-veg/non-veg.component';
 import { FastFoodComponent } from './fast-food/fast-food.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes=[
   {
@@ -48,7 +49,8 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
